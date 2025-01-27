@@ -7,9 +7,9 @@ IMDLIB is capable of downloading gridded rainfall and temperature (minimum and m
 
     import imdlib as imd
 
-    start_yr = 2010
-    end_yr = 2018
-    variable = 'rain' # other options are ('tmin'/ 'tmax')
+    start_yr = 1990
+    end_yr = 2024
+    variable = 'tmin' # other options are ('tmin'/ 'tmax')
     data = imd.get_data(variable, start_yr, end_yr, fn_format='yearwise')
 
 Output
@@ -17,15 +17,41 @@ Output
 
 .. code-block:: text
 
-    Downloading: rain for year 2010
-    Downloading: rain for year 2011
-    Downloading: rain for year 2012
-    Downloading: rain for year 2013
-    Downloading: rain for year 2014
-    Downloading: rain for year 2015
-    Downloading: rain for year 2016
-    Downloading: rain for year 2017
-    Downloading: rain for year 2018
+    Downloading: tmin for year 1990
+    Downloading: tmin for year 1991
+    Downloading: tmin for year 1992
+    Downloading: tmin for year 1993
+    Downloading: tmin for year 1994
+    Downloading: tmin for year 1995
+    Downloading: tmin for year 1996
+    Downloading: tmin for year 1997
+    Downloading: tmin for year 1998
+    Downloading: tmin for year 1999
+    Downloading: tmin for year 2000
+    Downloading: tmin for year 2001
+    Downloading: tmin for year 2002
+    Downloading: tmin for year 2003
+    Downloading: tmin for year 2004
+    Downloading: tmin for year 2005
+    Downloading: tmin for year 2006
+    Downloading: tmin for year 2007
+    Downloading: tmin for year 2008
+    Downloading: tmin for year 2009
+    Downloading: tmin for year 2010
+    Downloading: tmin for year 2011
+    Downloading: tmin for year 2012
+    Downloading: tmin for year 2013
+    Downloading: tmin for year 2014
+    Downloading: tmin for year 2015
+    Downloading: tmin for year 2016
+    Downloading: tmin for year 2017
+    Downloading: tmin for year 2018
+    Downloading: tmin for year 2019
+    Downloading: tmin for year 2020
+    Downloading: tmin for year 2021
+    Downloading: tmin for year 2022
+    Downloading: tmin for year 2023
+    Downloading: tmin for year 2024
     Download Successful !!!
 
 The output is saved in the current working directory. If you want to save the files to a different directory, then you can use the following code:
@@ -34,9 +60,9 @@ The output is saved in the current working directory. If you want to save the fi
 
     import imdlib as imd
 
-    start_yr = 2010
-    end_yr = 2018
-    variable = 'rain' # other options are ('tmin'/ 'tmax')
+    start_yr = 1990
+    end_yr = 2024
+    variable = 'tmin' # other options are ('tmin'/ 'tmax')
     file_dir = (r'C:\Users\imdlib\Desktop\\') #Path to save the files
     imd.get_data(variable, start_yr, end_yr, fn_format='yearwise', file_dir=file_dir)
 
